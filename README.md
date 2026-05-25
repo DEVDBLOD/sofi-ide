@@ -2,6 +2,8 @@
 
 A web-based cloud IDE with integrated AI assistant, terminal emulation, and multi-project support. Built with [Next.js 14](https://nextjs.org/) and [React 18](https://react.dev/).
 
+![Sofi IDE screenshot](example.png)
+
 ## Features
 
 - **Code Editor** — Powered by [Monaco Editor](https://microsoft.github.io/monaco-editor/) (the engine behind VS Code)
