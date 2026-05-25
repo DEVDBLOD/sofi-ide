@@ -616,20 +616,6 @@ export default function CodeEditor() {
           })}
         </div>
         <div className="flex-1" />
-        {!isImageFile(activeFile) && activeFile && (
-          <button
-            onClick={handleRun}
-            disabled={isRunning || !activeFile}
-            className="flex items-center gap-1.5 px-4 h-full font-mono text-[9.5px] uppercase tracking-[0.22em] border-l disabled:opacity-40 transition-colors"
-            style={{ borderColor: "rgba(245,245,245,0.06)", color: "#ffffff" }}
-          >
-            {isRunning
-              ? <Loader2 size={10} className="animate-spin-custom" />
-              : <span style={{ color: "rgba(255,255,255,0.6)" }}>▶</span>
-            }
-            <span>{isRunning ? "running" : "run · ⌘R"}</span>
-          </button>
-        )}
       </div>
 
       {/* ── Editor rail (breadcrumb) ───────────────────────────────────── */}
