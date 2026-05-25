@@ -1,0 +1,38 @@
+{
+  "name": "sofi-ide",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=1536 node server-custom.js",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=6144 next build",
+    "start": "cross-env NODE_ENV=production node server-custom.js"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.400.0",
+    "monaco-editor": "^0.50.0",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "resend": "^3.0.0",
+    "ws": "^8.19.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/ws": "^8.18.1",
+    "autoprefixer": "^10.4.0",
+    "cross-env": "^10.1.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
+  },
+  "optionalDependencies": {
+    "node-pty": "^1.1.0"
+  }
+}
